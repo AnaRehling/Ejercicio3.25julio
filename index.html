@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo Nivel 2 - Estructura Semántica y Multimedia</title>
+	<style>
+	   body {
+		 font-family: Arial, sans-serif;
+		 margin-top: 50px;
+		 margin-left: 80px;
+		 margin-right: 80px;
+		 margin-bottom: 50px;
+	     line-height: 1.5;
+	   }
+	   header, footer, nav, section, article, aside {
+	   	 padding: 10px;
+	     margin-bottom: 20px;
+	 	 border: 1px solid #ccc;
+	   	 border-radius: 5px;
+	   }	
+	   nav a {
+	   	 margin-right: 15px;
+	   	 text-decoration: none;
+	   	 color: blue;
+	   }
+	   figure {
+	   	 max-width: 400px;
+	   	 margin: 0;
+	   }
+	   figcaption {
+	   	font-size: 0.9em;
+	   	color: #555;
+	   }
+	   table {
+	   	border-collapse: collapse;
+	   	width: 100%;
+	   	max-width: 600px;
+	   }
+	   th, td {
+	   	border: 1px solid #999;
+	   	padding: 8px;
+	   	text-align: left;
+	   }
+	   th {
+	   	color: purple;
+	   }
+	   textarea {
+	   	width: 100%;
+	   	height: 80px;
+	   }
+	   select {
+	   	padding: 5px;
+	   	font-size: 1em;
+	   }
+	   h1{
+	   	color: purple;
+	   }
+	   h2{
+	   	color:green;
+	   }
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<center><h1>Mi Sitio Web Intermedio</h1></center>
+		<nav>
+		  <a href="#articulo1">Artículo 1</a>
+		  <a href="#articulo2">Artículo 2</a>
+		  <a href="#contacto">Contacto</a>
+		</nav>
+    </header>
+
+    <main>
+      <section id="articulo1">
+      	<article>
+      		<h2>Art&iacute;culo 1: La naturaleza</h2>
+      		<p>La naturaleza nos ofrece paisajes maravillosos y recursos invaluables. </p>
+      		<figure>
+      		  <img src="https://p0.pikist.com/photos/890/766/forest-way-landscape-tree-nature-the-path-forests-scenery-scene.jpg" alt="Camino en el bosque" width="400" />	
+      		  <figcaption>Camino rodeado de &aacute;rboles en un bosque. </figcaption>
+      	    </figure>
+      	    <aside>
+      	      <p><strong>Dato curioso:</strong> Los bosques cubren aproximadamente el 31% de la superficie terrestre.</p>
+      	    </aside>
+      	</article>       	  	
+      </section>	
+
+      <section id="articulo2">
+      	<article>
+      		<h2>Art&iacute;culo 2: Multimedia en la web</h2>
+      		<p>Incluir audio y video en las p&aacute;ginas web mejora la experiencia del usuario.</p>
+      		<video width="400" controls>
+      			<source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      		</video>
+      		<audio controls>
+      		  <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+      		  <source src="https://w3shools.com/html/horse.mp3"	type="audio/mpeg" />
+      		  Tu navegador no soporta el elemento de audio.
+      		</audio>
+      	</article>	 
+      </section>	  
+
+      <section id="datos-tabla">
+      	<h2>Tabla de datos</h2>
+      	<table>
+      	  <thead>
+      		<tr>
+      		  <th>Nombre</th>
+      		  <th>Edad</th>
+      		  <th>Ciudad</th>
+      		</tr>
+      	  </thead>
+      	  <tbody>
+      	    <tr>
+      	      <td>Ana</td>
+      	      <td>28</td>
+      	      <td>Madrid</td>
+      	    </tr>
+      	    <tr>
+      	      <td>Carlos</td>
+      	      <td>34</td>
+      	      <td>Buenos Aires</td>
+      	    </tr>
+      	    <tr>
+      	      <td>Mar&iacute;a</td>
+      	      <td>22</td>
+      	      <td>Ciudad de M&eacute;xico</td>
+      	    </tr>
+      	  </tbody>
+      	</table>
+     </section>
+
+     <section id="contacto">
+       <h2>Formulario de Contacto</h2>
+       <form action="#" method="post">
+         <label action="mensaje">Mensaje:</label><br />
+         <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqu&iacute;..."></textarea><br /><br />
+
+         <label for="tema">Tema:</label><br />
+         <select id="tema" name="tema">
+         	<option value="consulta">Consulta</option>
+         	<option value="otro">Otro</option>
+         </select><br /><br />
+         
+         <button type="submit">Enviar</button>
+       </form>
+     </section>
+    </main>
+    
+    <footer>
+      <center><p>© 2025 Mi sitio Web. Todos los derechos reservados.</p></center>
+    </footer>       			
+
+</body>
+</html>
